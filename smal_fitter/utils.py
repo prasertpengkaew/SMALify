@@ -3,6 +3,8 @@ import numpy as np
 from nibabel import eulerangles
 
 def crop_to_silhouette(sil_img, rgb_img, joints, target_size):
+    
+    
     assert len(sil_img.shape) == 2, "Silhouette image is not HxW"
     assert len(rgb_img.shape) == 3, "RGB image is not HxWx3"
 
